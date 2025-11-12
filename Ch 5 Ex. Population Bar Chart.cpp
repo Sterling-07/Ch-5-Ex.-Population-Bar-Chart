@@ -10,17 +10,17 @@ int main()
 {
 	int a, pop, population;
 	double year = 1900;
-	string filename, town;
+	string file, town;
 
 	cout << "Enter the name of the town: \n";
 	cin >> town;
 	cout << "Enter the name of the file: \n";
-	cin >> filename;
+	cin >> file;
 
-	ifstream inputfile(filename);
+	ifstream inputfile(file);
 	if (!inputfile)
 	{
-		cout << "There was an error opening the file " << filename << "\n";
+		cout << "There was an error opening the file " << file << "\n";
 		return 1;
 	}
 
@@ -30,7 +30,7 @@ int main()
 	while (inputfile >> pop)
 	{
 		population = (pop / 1000);
-		cout << year << "\t" << " ";
+		cout << year << "\t"; 
 		for (a = 0; a < population; a++)
 		{
 			cout << "*";
