@@ -21,7 +21,6 @@ int main()
 	if (!inputfile)
 	{
 		cout << "There was an error opening the file " << file << "\n";
-		return 1;
 	}
 
 	cout << town << " Population Growth\n";
